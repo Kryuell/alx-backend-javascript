@@ -9,8 +9,6 @@ const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 /**
  * @desc Server responds with 'Hello Holberton School!'
  */
-app.on('request', (_, res) => {
-  const responseText = 'Hello Holberton School!';
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
     reject(new Error('Cannot load the database'));
