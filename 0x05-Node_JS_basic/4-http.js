@@ -4,7 +4,9 @@ const PORT = 1245;
 const HOST = 'localhost';
 const app = http.createServer();
 
-
+/**
+ * @desc Server responds with 'Hello Holberton School!'
+ */
 app.on('request', (_, res) => {
   const responseText = 'Hello Holberton School!';
 
